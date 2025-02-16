@@ -68,6 +68,7 @@ function App() {
                 <th scope="col">產品名稱</th>
                 <th scope="col">原價</th>
                 <th scope="col">售價</th>
+                <th scope="col">是否啟用</th>
                 <th scope="col">查看細節</th>
               </tr>
             </thead>
@@ -77,6 +78,7 @@ function App() {
                   <td>{product.title}</td>
                   <td>{product.origin_price}</td>
                   <td>{product.price}</td>
+                  <td>{product.is_enabled > 0 ? "是" : "否"}</td>
                   <td>
                     <button
                       className="btn btn-primary"
